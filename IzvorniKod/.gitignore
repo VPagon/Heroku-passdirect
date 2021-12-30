@@ -1,7 +1,0 @@
-.settings/*
-/target/*
-/bin/*
-.classpath
-.factorypath
-.project
-.vscode/
