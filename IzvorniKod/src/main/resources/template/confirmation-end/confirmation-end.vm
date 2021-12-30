@@ -1,0 +1,10 @@
+#parse("/template/base.vm")
+#@baseLayout()
+    <div class="bg-image"></div>
+    <div class="form-window">
+        <h2>Hvala Vam na registraciji.</h2> 
+        <h3>Vaš korisnički račun je uspješno aktiviran.</h3>
+        <hr>
+        <h3>Kliknite <a href="/home"><u>ovdje</u></a> za nastavak.</h3>
+    </div>
+#end

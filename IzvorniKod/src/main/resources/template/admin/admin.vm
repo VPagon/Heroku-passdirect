@@ -1,0 +1,33 @@
+#parse("/template/base.vm")
+
+#@baseLayout()
+
+    <div class="bg-image"></div>
+    <div class="bg-text" style="width: 400px;">
+        <h2>Odaberi opciju:</h2>
+        <hr>
+        <div>
+        <a href="/admin/users">
+            <button class="button">KORISNICI</button>
+        </a>
+        </div>
+        <div>
+        <a href="/admin/transactions">
+            <button class="button">TRANSAKCIJE</button>
+        </a>
+        </div>
+        <div>
+            <a href="/admin/time-table">
+                <button class="button">RED VOŽNJE</button>
+            </a>
+        </div>
+    </div>
+    <div class="fixed-top-bar">
+        <a class="circle-icon" title="Home" href="/"><span class="material-icons md-light">home</span></a>
+        #if($user.getOznakaUloga().equals("A"))
+            <a class="circle-icon" title="Postavke" href="/admin"><span class="material-icons md-light">admin_panel_settings</span></a>
+        #end
+        <a class="circle-icon" title="Odjava" href="/logout"><span class="material-icons md-light">logout</span></a>
+    </div>
+
+#end

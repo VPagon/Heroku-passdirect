@@ -1,0 +1,36 @@
+#parse("/template/base.vm")
+
+#@baseLayout()
+
+    <div class="bg-image"></div>
+    <div class="bg-text">
+        <h2>PREGLED TRANSAKCIJA</h2>
+        <hr>
+        <div class="transactions">
+            <h3>Ime:</h3>
+            <h3>Prezime:</h3>
+            <h3>E-mail:</h3>
+            <h3>Oznaka karte:</h3>
+            <h3>Cijena karte:</h3>
+        </div>
+        <hr>
+        <div class="transactions">
+            #foreach ($transaction in $transactions)
+                <p>$transaction.getIme()</p>
+                <p>$transaction.getPrezime()</p>
+                <p>$transaction.getEmail()</p>
+                <p>$transaction.getOznakaKarta()</p>
+                <p>$transaction.getCijenaKarta()</p>
+
+            #end
+        </div>
+    </div>
+    <div class="fixed-top-bar">
+        <a class="circle-icon" title="Home" href="/"><span class="material-icons md-light">home</span></a>
+        #if($user.getOznakaUloga().equals("A"))
+            <a class="circle-icon" title="Postavke" href="/admin"><span class="material-icons md-light">admin_panel_settings</span></a>
+        #end
+        <a class="circle-icon" title="Odjava" href="/logout"><span class="material-icons md-light">logout</span></a>
+    </div>
+
+#end

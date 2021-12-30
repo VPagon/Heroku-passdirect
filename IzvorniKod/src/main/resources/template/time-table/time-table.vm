@@ -1,0 +1,37 @@
+#parse("/template/base.vm")
+
+#@baseLayout()
+
+<div class="bg-image"></div>
+<div class="bg-text">
+    <h2>PREGLED REDA VOŽNJE</h2>
+    <hr>
+    <div class="red-voznje">
+        <h4>Oznaka vlaka:</h4>
+        <h4>Polazište:</h4>
+        <h4>Odredište:</h4>
+        <h4>Polazak:</h4>
+        <h4>Dolazak:</h4>
+        <h4>Cijena: [kn]</h4>
+    </div>
+    <hr>
+    <div class="red-voznje">
+        #foreach ($voznja in $red-voznje)
+            <p>$voznja.getOznakaVlak()</p>
+            <p>$voznja.getStanica().getNazivStanica()</p>
+            <p>$voznja.getOdredisteStanica().getNazivStanica()</p>
+            <p>$voznja.getDatVrijPolaska()</p>
+            <p>$voznja.getDatVrijDolaska()</p>
+            <p>$voznja.getCijenaVoznja()</p>
+        #end
+    </div>
+</div>
+<div class="fixed-top-bar">
+    <a class="circle-icon" title="Home" href="/"><span class="material-icons md-light">home</span></a>
+    #if($user.getOznakaUloga().equals("A"))
+        <a class="circle-icon" title="Postavke" href="/admin"><span class="material-icons md-light">admin_panel_settings</span></a>
+    #end
+    <a class="circle-icon" title="Odjava" href="/logout"><span class="material-icons md-light">logout</span></a>
+</div>
+
+#end

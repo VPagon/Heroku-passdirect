@@ -1,0 +1,22 @@
+#parse("/template/base.vm")
+#@baseLayout()
+    <div class="bg-image"></div>
+    <div class="form-window">
+        <form action="" method="post" class="form">
+            <h1>PRIJAVA</h1>
+            <p class="label-text" for="email" placeholder="Unesite e-mail">E-mail:</p>
+            <input class="input" type="email" name="email" id="email" required>
+            <p class="label-text" for="password" placeholder="Unesite lozinku">Lozinka:</p>
+            <input class="input" type="password" name="password" id="password" required>
+            <br>
+            <button type="submit" class="button">PRIJAVI SE</button>
+            #if($loginFailed)
+            <p>Neispravna kombinacija e-maila i lozinke.</p>
+            #end
+            <p>Nemate korisnički račun? <a class="link" href="./../register">Registriraj se</a>.</p>
+        </form>
+    </div>
+    <div class="fixed-top-bar">
+        <a class="circle-icon" title="Home" href="/"><span class="material-icons md-light">home</span></a>
+    </div> 
+#end

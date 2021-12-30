@@ -1,0 +1,28 @@
+#parse("/template/base.vm")
+#@baseLayout()
+    <div class="bg-image"></div>
+    <div class="form-window">
+        <form action="" method="post" class="form">
+            <h1>REGISTRACIJA</h1>
+            <p class="label-text" for="firstname">Ime:</p>
+            <input class="input" type="text" name="firstname" id="firstname" required>
+            <p class="label-text" for="lastname">Prezime:</p>
+            <input class="input" type="text" name="lastname" id="lastname" required>
+            <p class="label-text" for="email">E-mail:</p>
+            <input class="input" type="email" name="email" id="email" required>
+            <p class="label-text" for="password">Lozinka:</p>
+            <input class="input" type="password" name="password" id="password" required>
+            <p class="label-text" for="password">Ponovite lozinku:</p>
+            <input class="input" type="password" name="password-repeat" id="password-repeat" required>
+            <br>
+            <button class="button">REGISTRIRAJ SE</button>
+            #if($registrationFailed)
+            <p>Uneseni podatci nisu ispravni (postoji korisnik s tim e-mailom, lozinke se ne podudaraju, neispravan format e-maila...)</p>
+            #end
+            <p>Imate korisnički račun? <a class="link" href="./../login">Prijavi se</a>.</p>
+        </form>
+    </div>       
+    <div class="fixed-top-bar">
+        <a class="circle-icon" title="Home" href="/"><span class="material-icons md-light">home</span></a>
+    </div>
+#end

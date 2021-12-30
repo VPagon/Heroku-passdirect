@@ -1,0 +1,22 @@
+#parse("/template/base.vm")
+#@baseLayout()
+    <div class="bg-image"></div>
+    <div class="form-window">
+        #if ($paymentSuccess == true)
+            <h1>HVALA VAM NA KUPNJI!</h1>
+            <hr>
+            <h3>Kupljena karta nalazi se na mailu.</h3>
+        #else
+            <h1>Greška pri kupnji karte</h1>
+            <hr>
+            <h3>Provjerite podatke i ponovno kupite kartu.</h3>
+        #end
+    </div>
+    <div class="fixed-top-bar">
+        <a class="circle-icon" title="Home" href="/"><span class="material-icons md-light">home</span></a>
+        #if($user.getOznakaUloga().equals("A"))
+            <a class="circle-icon" title="Postavke" href="/admin"><span class="material-icons md-light">admin_panel_settings</span></a>
+        #end
+        <a class="circle-icon" title="Odjava" href="/logout"><span class="material-icons md-light">logout</span></a>
+    </div>
+#end

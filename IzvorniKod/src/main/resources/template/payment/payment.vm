@@ -1,0 +1,49 @@
+#parse("/template/base.vm")
+#@baseLayout()
+    <div class="bg-image"></div>
+    <div class="kartica">
+        <form action="/payment/$oznVlak/$start/$dest" method="post" class="form kartica">
+            <div class="card-left">
+                <img class="card-img" src="/img/cards.png">
+                <p class="label-text" for="cardnumber">Broj kartice:</p>
+                #if ($kartica)
+                    <input class="input-50" name="cardnumber" id="cardnumber" size="50" inputmode="numeric"
+                    autocomplete="cc-number" placeholder="1234 5678 9012 3456" value="$kartica.getBrojKartice()" required>
+                #else
+                    <input class="input-50" name="cardnumber" id="cardnumber" size="50" inputmode="numeric"
+                    autocomplete="cc-number" placeholder="1234 5678 9012 3456" required>
+                #end
+                <div class="flex">
+                    <div>             
+                        <p class="label-text" for="carddate">Datum isteka:</p>
+                        <input class="input" name="carddate" id="carddate" size="22" inputmode="numeric" 
+                        autocomplete="cc-exp" placeholder="MM/GG" required>
+                    </div>
+                    <div>
+                        <p class="label-text" for="cardcvv">CVV:</p>
+                        <input class="input" name="cardcvv" id="cardcvv" size="22" inputmode="numeric"
+                        autocomplete="cc-csc" placeholder="123" required>
+                    </div>
+                </div>
+                #if ($kartica)
+                    <p class="label-text" for="cardowner">Vlasnik kartice:</p>
+                    <input class="input-50" type="text" name="cardowner" id="cardowner" size="50" value="$kartica.getImePrezVlasnik()" placeholder="John Smith" required>
+                #else
+                    <p class="label-text" for="cardowner">Vlasnik kartice:</p>
+                    <input class="input-50" type="text" name="cardowner" id="cardowner" size="50" placeholder="John Smith" required>
+                #end
+            </div>
+            <div class="card-right">
+                <div class="fixed-top-bar-cancel">
+                    <a href="/"><img class="fixed-top-bar-cancel" src="/img/cancel.png" alt="cancel"></a>
+                </div>
+                <p class="label-text">Ukupno:</p>
+                <span>Cijena:</span>
+                $price
+                <span>HRK</span>
+                <br>
+                <button class="pay">PLATI</button>
+            </div>
+        </form>
+    </div>
+#end

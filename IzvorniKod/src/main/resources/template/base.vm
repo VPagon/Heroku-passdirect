@@ -1,0 +1,19 @@
+#macro(baseLayout)
+<html>
+<head>
+    <title>$pageTitle</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/style/main.css">
+    <link rel="shortcut icon" type="image/png" href="/img/train-icon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Antique+B1&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    $bodyContent
+</body>
+
+</html>
+#end

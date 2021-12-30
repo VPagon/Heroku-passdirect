@@ -1,0 +1,8 @@
+#parse("/template/base.vm")
+#@baseLayout()
+    <div class="bg-image"></div>
+    <div class="form-window">
+        <h2>Molimo Vas,</h2>
+        <h3>potvrdite svoj korisnički račun na mailu.</h3>
+    </div>
+#end

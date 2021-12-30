@@ -1,0 +1,19 @@
+#parse("/template/base.vm")
+
+#@baseLayout()
+  <div class="bg-image"></div>
+  <div class="bg-text">
+    <div>
+      <h1>DOBRO DOŠLI!</h1> 
+      <h2><i>Putujte sigurno s nama!</i></h2>
+    </div>
+    <div class="text">
+      <div>
+        <h4>Za pretragu reda vožnje ili kupnju karte morate biti prijavljeni</h4>
+        <a class="button" href="./login">PRIJAVI SE</a>
+        <h4>Nemate korisnički račun? </h4>
+        <a class="button" href="./register">KREIRAJ KORISNIČKI RAČUN</a>
+      </div>
+    </div>
+  </div>
+#end
