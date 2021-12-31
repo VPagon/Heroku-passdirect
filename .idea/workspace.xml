@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3229bea7-c360-408a-81f8-c8ba88944238" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+    <list default="true" id="3229bea7-c360-408a-81f8-c8ba88944238" name="Changes" comment="bok">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/angrynerds/passdirect/config/Env.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/angrynerds/passdirect/config/Env.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,8 +82,16 @@
       <workItem from="1640876256145" duration="4636000" />
       <workItem from="1640903852414" duration="1675000" />
       <workItem from="1640940021100" duration="2747000" />
-      <workItem from="1640943189625" duration="3100000" />
+      <workItem from="1640943189625" duration="3660000" />
     </task>
+    <task id="LOCAL-00001" summary="bok">
+      <created>1640946378967</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1640946378967</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -98,5 +107,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="bok" />
+    <option name="LAST_COMMIT_MESSAGE" value="bok" />
   </component>
 </project>
