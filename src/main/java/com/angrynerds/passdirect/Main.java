@@ -12,7 +12,9 @@ import static spark.Spark.*;
 
 public class Main {
     public static void main(String[] args) {
-        port(80);
+        String dyno_port = System.getenv("PORT");
+        System.out.println("dyno_port=" + dyno_port);
+        port(Integer.parseInt(dyno_port));
         staticFiles.location("/public");
         //staticFiles.expireTime(1000L);
 
