@@ -12,7 +12,7 @@ import static spark.Spark.*;
 
 public class Main {
     public static void main(String[] args) {
-        port(4567);
+        port(80);
         staticFiles.location("/public");
         //staticFiles.expireTime(1000L);
 
