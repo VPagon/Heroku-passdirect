@@ -32,7 +32,7 @@ public class GotchaSenzori {
                     String[] mjer_split = mjer.split(" ");
                     Date date = format.parse(mjer_split[2] + " " + mjer_split[3]);
                     if (date.before(new Date())) {
-                        System.out.println("------------------------------------[GOTCHA " + format.format(new Date()) + "] Novo mjerenje: " + mjer);
+                        System.out.println("[GOTCHA " + format.format(new Date()) + "] Novo mjerenje: " + mjer);
                         delete.add(mjer);
                         int oznakaStanica = Integer.parseInt(mjer_split[0]);
                         String oznakaVlak = mjer_split[1];
