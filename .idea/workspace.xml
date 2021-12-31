@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3229bea7-c360-408a-81f8-c8ba88944238" name="Changes" comment="bok">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/angrynerds/passdirect/Rasporedjivac.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/angrynerds/passdirect/Rasporedjivac.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/angrynerds/passdirect/config/Env.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/angrynerds/passdirect/config/Env.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,6 +23,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="22EHg3P9ngT5mCGRMMxNdWSJxyq" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -82,7 +90,7 @@
       <workItem from="1640876256145" duration="4636000" />
       <workItem from="1640903852414" duration="1675000" />
       <workItem from="1640940021100" duration="2747000" />
-      <workItem from="1640943189625" duration="3660000" />
+      <workItem from="1640943189625" duration="4724000" />
     </task>
     <task id="LOCAL-00001" summary="bok">
       <created>1640946378967</created>

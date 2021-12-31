@@ -54,7 +54,7 @@ public class Rasporedjivac {
         if (mjerenjaVagona.size() == 0)
             return;
 
-        System.out.println("[RASPOREDJIVAC] Rasporedjujem kartu " + karta.getOznakaKarta());
+        System.out.println("----------------------------------------[RASPOREDJIVAC] Rasporedjujem kartu " + karta.getOznakaKarta());
         
         
         // "prazniji dio najmanje okupiranog vagona"

@@ -19,7 +19,7 @@ public class Env {
     public static final String MAIL_SMTP_PORT = "587";
     public static final String MAIL_SMTP_SSL_TRUST = "smtp.gmail.com";
 
-    public static final String APPLICATION_PROTOCOL = "https";
+    public static final String APPLICATION_PROTOCOL = "http";
     public static final String APPLICATION_HOST = "localhost:4567";
   }
 }
