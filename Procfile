@@ -1,1 +1,1 @@
-web:    java -Dserver.port=$PORT $JAVA_OPTS -jar target/passdirect-1-jar-with-dependencies.jar -p 4567
+web:    java -Dserver.port=$PORT $JAVA_OPTS -jar target/passdirect-1-jar-with-dependencies.jar -p $PORT
